@@ -27,7 +27,6 @@ This repository contains an end-to-end automation testing project for the [Orang
 | Java            | Programming language          |
 | Selenium WebDriver | Browser automation         |
 | TestNG          | Test framework                |
-| REST Assured    | API testing                   |
 | Maven           | Build and dependency manager  |
 | POM             | Design pattern used           |
 | GitHub          | Source control and collaboration |

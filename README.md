@@ -33,3 +33,6 @@ This repository contains an end-to-end automation testing project for the [Orang
 | GitHub          | Source control and collaboration |
 
 ---
+
+## Run  Tests
+mvn clean test

@@ -2,6 +2,7 @@ import Pages.HomePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -30,7 +31,8 @@ public class Loginpagetests extends BaseTest{
         //Thread.sleep(1000);
 
         //Assertions
-        Thread.sleep(1000);
+        //I'm using Thread.sleep also it's bad because the explicit is giving an error and I don't have time to debug it
+        Thread.sleep(250);
         // Assert that the number of Results are correct
         WebElement NoOfResults = driver.findElement(HomePage.noOfResults);
         String actualText = NoOfResults.getText();
@@ -55,7 +57,9 @@ public class Loginpagetests extends BaseTest{
         homePage.clickOnElement(homePage.deleteIcon);
 
         //Assert that the admin user deletion is not allowed (an error appears
+        //I'm using Thread.sleep also it's bad because the explicit is giving an error and I don't have time to debug it
         Thread.sleep(100);
+        //wait(100);
         WebElement popupMessage = driver.findElement(HomePage.popupMessage);
         String Message = popupMessage.getText();
         Assert.assertEquals(Message,"Error\n" +
